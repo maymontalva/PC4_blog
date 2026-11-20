@@ -31,12 +31,10 @@ if opciones == 'Presentación':
 
     texto = """
     Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres? 
-    ¿De dónde eres? 
-    ¿Qué estudias?
-    ¿Qué te gusta de tu carrera? 
-    ¿Qué te gustaría hacer en el futuro?
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Mi Nombre es Mayte Montalva, tengo 24 años y soy de de Lima, Peru, ademas estudio publicidad en la PUCP. 
+    Lo que mas me gusta de mi carrera es como idear propuestas las marcas o empresas puedan acercarse a sus consumidores, haciendolo ademas de una manera creativa
+    y llamativa para diferenciarse de las demas opciones. en un futuro me gustria hacer una maestria en el extranjero, preferiblemente China, para especializarme en 
+    tecnicas publicitaria alineadas al marketing digital. En mi tiempo libre me gusta leer y escuchar musica.
     """
     col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>", unsafe_allow_html=True)
 
@@ -78,6 +76,8 @@ elif  opciones == 'Experiencia':
 
     # Alumno a
     texto_4 = """
+
+    
     Aquí escribe tu experiencia aprendiendo a programar. 
     ¿Cómo te sentiste al principio? 
     ¿Qué te ha enseñado la programación? 
