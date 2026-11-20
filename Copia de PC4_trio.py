@@ -123,7 +123,7 @@ elif  opciones == 'Experiencia':
     
     col1, col2, col3 = st.columns([1, 2, 1])
     
-      st.subheader("🎥 Practica calificada 2-Gabi")
+   st.subheader("🎥 Practica calificada 2-Gabi")
     st.video("https://youtu.be/ip_kpPUUpWA?feature=shared")
 
     # Alumno c
