@@ -10,9 +10,9 @@ from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 
 ### Opción 1: Menú vertical
-with st.sidebar:
-    opciones = option_menu("Selecciona una sección: ",['Presentación', 'Experiencia', 'Gráficos'] , 
-        icons=['0-circle','1-circle', '2-circle'], menu_icon="filetype-py", default_index=0)
+#with st.sidebar:
+   # opciones = option_menu("Selecciona una sección: ",['Presentación', 'Experiencia', 'Gráficos'] , 
+       # icons=['0-circle','1-circle', '2-circle'], menu_icon="filetype-py", default_index=0)
 
 ### Opción 2: Menú horizontal
 opciones_2 = option_menu(
@@ -21,7 +21,7 @@ opciones_2 = option_menu(
     icons=['0-circle','1-circle', '2-circle'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
-if opciones == 'Presentación':
+if opciones == 'Presentaciones':
     st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre del blog</h1>", unsafe_allow_html=True)
 
     # Alumno a
@@ -75,7 +75,12 @@ elif  opciones == 'Experiencia':
     # Alumno a
     texto_4 = """
 
-    
+    En cuanto a mi experiencia con la programacion, llevé unas cuantas clases en mi último año de secundaria, aunque la verdad no aprendi mucho, 
+    asi que considero que esta clase es mi primera eperiencia en programacion. Al inicio me sentia bastante nerviosa ya que los programas y codigos
+    se ven intimidandes al inicio. Sin embargo, con el transcurso de las clases considero que fui tomando confianza. La programamcion me ha enseñado
+    a ser bastante minuciosa y estar pendiente a los detalles, ya que un solo error malogra todo tu codigo. Me parece bastante interesante descubrir
+    como se crean las funciones de laspaginas web que utilizamos dia a dia. Por ultimo, siento que esta herrmienta puede ser de gran utilida para crear 
+    paginas web para empresas, por lo que es un gran aporte para mi CV en futuros trabajos
     Aquí escribe tu experiencia aprendiendo a programar. 
     ¿Cómo te sentiste al principio? 
     ¿Qué te ha enseñado la programación? 
