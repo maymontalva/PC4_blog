@@ -21,7 +21,7 @@ opciones_2 = option_menu(
     icons=['0-circle','1-circle', '2-circle'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
-if opciones == 'Presentaciones':
+if opciones_2 == 'Presentaciones':
     st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre del blog</h1>", unsafe_allow_html=True)
 
     # Alumno a
@@ -68,7 +68,7 @@ if opciones == 'Presentaciones':
     """
     col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_3}</div>", unsafe_allow_html=True)
     
-elif  opciones == 'Experiencia':
+elif  opciones_2 == 'Experiencia':
 
     st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
 
