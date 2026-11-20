@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0fb1da53d250d83821f17d9dfef5b412 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0fb1da53d250d83821f17d9dfef5b412" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0fb1da53d250d83821f17d9dfef5b412 = L.map(
+                "map_0fb1da53d250d83821f17d9dfef5b412",
+                {
+                    center: [53.0, 12.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_0fb1da53d250d83821f17d9dfef5b412);
+
+            
+
+        
+    
+            var tile_layer_901eb4109a4c0d2ee608c0ec6836aeed = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap contributors\u003c/a\u003e | Datos bajo licencia \u003ca href=\"https://opendatacommons.org/licenses/odbl/\"\u003eODbL\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "referrerPolicy": "strict-origin",
+}
+
+            );
+        
+    
+            tile_layer_901eb4109a4c0d2ee608c0ec6836aeed.addTo(map_0fb1da53d250d83821f17d9dfef5b412);
+        
+    
+            var marker_e653533fbaf3bc715e21ad158fc288c2 = L.marker(
+                [49.6415, 8.645],
+                {
+}
+            ).addTo(map_0fb1da53d250d83821f17d9dfef5b412);
+        
+    
+            var icon_014ea172729f94c1378c54198c0bc5b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c159f0817b8b334dac809787b19b9d4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_7be71926cd4936c854a25a7a9c6b614f = $(`<div id="html_7be71926cd4936c854a25a7a9c6b614f" style="width: 100.0%; height: 100.0%;">     <div style= 'text-align:center; width:220px;'>         <h2 style='color:#0015D1; margin-bottom:5px;'>S. VETTEL</h2>         <img src='https://i2-prod.mirror.co.uk/article9161911.ece/ALTERNATES/s1200f/PAY-Formula-One-World-Championship-Mexican-Grand-Prix.jpg' width='150' height='150'              style='object-fit:cover; border-radius:10px; margin-bottom:8px;'>         <p style='margin:4px 0;'><b>Escuderia:</b> Ferrari</p>         <p style='margin:4px 0;'><b>Puntaje total 2016:</b><br>         <span style='color:#006400; font-size:18px; font-weight:bold;'>212 pts</span></p>     </div>     </div>`)[0];
+                popup_8c159f0817b8b334dac809787b19b9d4.setContent(html_7be71926cd4936c854a25a7a9c6b614f);
+            
+        
+
+        marker_e653533fbaf3bc715e21ad158fc288c2.bindPopup(popup_8c159f0817b8b334dac809787b19b9d4)
+        ;
+
+        
+    
+    
+            marker_e653533fbaf3bc715e21ad158fc288c2.bindTooltip(
+                `<div>
+                     S. VETTEL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e653533fbaf3bc715e21ad158fc288c2.setIcon(icon_014ea172729f94c1378c54198c0bc5b5);
+            
+    
+            var marker_bb9fbf5e8714d5b21ce4e1a6c6df41b7 = L.marker(
+                [60.2055, 24.6559],
+                {
+}
+            ).addTo(map_0fb1da53d250d83821f17d9dfef5b412);
+        
+    
+            var icon_54aad8fc9b85451be7c2b3ffb50321b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77cdee7116468d1c1e9bdcf3a2cb7099 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_76368a4936fdd624f55f07e548518e20 = $(`<div id="html_76368a4936fdd624f55f07e548518e20" style="width: 100.0%; height: 100.0%;">     <div style= 'text-align:center; width:220px;'>         <h2 style='color:#0015D1; margin-bottom:5px;'>K. RAIKKONEN</h2>         <img src='https://www.motorsinside.com/en/wp-content/uploads/sites/2/2016/08/1500_edito_09DTWWmtO8ikaGoEtFU5vQpf6qb8Khe5J2c1Nv6njTmfy2j5NJVTfdPLRKZ_KXthQonPYY_e3B7D3Eiog636maA=.webp' width='150' height='150'              style='object-fit:cover; border-radius:10px; margin-bottom:8px;'>         <p style='margin:4px 0;'><b>Escuderia:</b> Ferrari</p>         <p style='margin:4px 0;'><b>Puntaje total 2016:</b><br>         <span style='color:#006400; font-size:18px; font-weight:bold;'>186 pts</span></p>     </div>     </div>`)[0];
+                popup_77cdee7116468d1c1e9bdcf3a2cb7099.setContent(html_76368a4936fdd624f55f07e548518e20);
+            
+        
+
+        marker_bb9fbf5e8714d5b21ce4e1a6c6df41b7.bindPopup(popup_77cdee7116468d1c1e9bdcf3a2cb7099)
+        ;
+
+        
+    
+    
+            marker_bb9fbf5e8714d5b21ce4e1a6c6df41b7.bindTooltip(
+                `<div>
+                     K. RAIKKONEN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bb9fbf5e8714d5b21ce4e1a6c6df41b7.setIcon(icon_54aad8fc9b85451be7c2b3ffb50321b3);
+            
+</script>
+</html>
