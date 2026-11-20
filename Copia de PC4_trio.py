@@ -17,7 +17,7 @@ import streamlit.components.v1 as components
 ### Opción 2: Menú horizontal
 opciones_2 = option_menu(
     menu_title="Selecciona una sección: ", 
-    options=['Presentación', 'Experiencia', 'Gráficos'], 
+    options=['Presentaciones', 'Experiencia', 'Gráficos'], 
     icons=['0-circle','1-circle', '2-circle'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
