@@ -22,7 +22,7 @@ opciones_2 = option_menu(
     menu_icon="cast", default_index=0, orientation="horizontal")
 
 if opciones_2 == 'Presentaciones':
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre del blog</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: pink'>Nombre del blog</h1>", unsafe_allow_html=True)
 
     # Alumno a
     col1, col2 = st.columns(2)
@@ -50,12 +50,12 @@ if opciones_2 == 'Presentaciones':
     """
     col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
     
-    col2.image("ellie.png", caption='Ellie', width=300)
+    col2.image("IMG_0843.JPG", caption='Gabriela', width=300)
 
     # Alumno c
     col1, col2 = st.columns(2)
     
-    col1.image("ellie.png", caption='Ellie', width=300)
+    col1.image("IMG_7672.PNG", caption='Matias', width=300)
     
     texto_3 = """
     Hola!!! Me llamo Matias, actualmente temgo 19 años, nací en febrero y eso me convierte en Acuario :). Nací en Lima, Perú y
@@ -128,7 +128,7 @@ elif  opciones_2 == 'Experiencia':
 
     # Alumno c
     texto_6 = """
-  Es mi primera vez programando. 
+    Es mi primera vez programando. 
     Al principio pensé que era muy difcil aprenderse todos los códigos, librerías, etc. pero en el transcurso del curso me di cuenta que si tiene su grado de dificultad, pero es posible aprender.
     La programación me ha enseñado a ver el transfondo y funcionamiento de muchos programas.
     La verdad no me gusta mucho la programación, pero considero que cuando programas con temas que te gustan se hace más divertida la experiencia.
