@@ -27,7 +27,7 @@ if opciones_2 == 'Presentaciones':
     # Alumno a
     col1, col2 = st.columns(2)
     
-    col1.image("ellie.png", caption='Ellie', width=300)
+    col1.image("May.jpg", caption='Mayte', width=300)
 
     texto = """
     Aquí escribe una presentación creativa sobre ti.
