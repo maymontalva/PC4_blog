@@ -42,13 +42,11 @@ if opciones == 'Presentación':
     col1, col2 = st.columns(2)
     
     texto_2 = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres? 
-    ¿De dónde eres? 
-    ¿Qué estudias? 
-    ¿Qué te gusta de tu carrera? 
-    ¿Qué te gustaría hacer en el futuro? 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Hola, mi nombre es Gabriela, pero puedes decirme Gabi. Soy de Moyobamba, de la selva y me mude a Lima hace 4 años. 
+    Estudio comunicación para el desarollo en la PUCP.
+    Lo que me encanta de mi carrera es que es que busca generar cambios sociales, ya sea en temas de salud, educación o incluso cultura creando campañas y proyectos de desarrollo.
+    En el futuro me encantaría hacer proyectos de investigación y hacer trabajo de campo con las comunidades
+    En mi tiempo libre me gustar escuchar música, leer y pintar.
     """
     col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
     
@@ -60,13 +58,13 @@ if opciones == 'Presentación':
     col1.image("ellie.png", caption='Ellie', width=300)
     
     texto_3 = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres? 
-    ¿De dónde eres? 
-    ¿Qué estudias?
-    ¿Qué te gusta de tu carrera? 
-    ¿Qué te gustaría hacer en el futuro?
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Hola!!! Me llamo Matias, actualmente temgo 19 años, nací en febrero y eso me convierte en Acuario :). Nací en Lima, Perú y
+    estudio la carrera de publicidad en la PUCP, lo que más me gusta de mi carrera es las herramientas que te brinda la publicidad
+    para influir en el comportamiento de las personas para que prefieran tu producto o servicio frente a otros. Es interesante cómo
+    somo seres bastante influyentes. No me cierro a ninguna posibilidad que me pueda abrir mi carrera, ya que existen varias áreas, pero
+    siempre me voy a inclinar por el lado más creativo y todo lo que temga que ver con eso, me encantaría estar en vuelto en campañas
+    super disruptivas. Una de las cosas que más me gusta hacer es editar videos, siento que es una actividad que me permite recargarme, por
+    así decirlo, de creatividad.
     """
     col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_3}</div>", unsafe_allow_html=True)
     
@@ -128,11 +126,11 @@ elif  opciones == 'Experiencia':
 
     # Alumno c
     texto_6 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio? 
-    ¿Qué te ha enseñado la programación? 
-    ¿Qué te gusta de programar? 
-    ¿Qué te gustaría hacer con la programación en el futuro?
+  Es mi primera vez programando. 
+    Al principio pensé que era muy difcil aprenderse todos los códigos, librerías, etc. pero en el transcurso del curso me di cuenta que si tiene su grado de dificultad, pero es posible aprender.
+    La programación me ha enseñado a ver el transfondo y funcionamiento de muchos programas.
+    La verdad no me gusta mucho la programación, pero considero que cuando programas con temas que te gustan se hace más divertida la experiencia.
+    En el futuro quisiera que la programación me ayude a completar investigaciones. ya que creo que hace más practico el manejo de datos.
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
         
