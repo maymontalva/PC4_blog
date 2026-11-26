@@ -179,8 +179,11 @@ else:
     elif grafico_seleccionado == 'mayhistograma.png':
         st.subheader("📊 Histograma Mayte: Goles Girona")
         texto_8 = """
-       Este gráfico muestra que el Girona, jugando como local, suele anotar entre 1 y 2 goles por partido, siendo esta la frecuencia más habitual.
-       También se observa que en algunos encuentros marca 0, 3 o 4 goles, aunque estos resultados son menos frecuentes. 
+       El primer gráfico muestra que el Girona, jugando como local, suele anotar entre 1 y 2 goles por partido, siendo esta la frecuencia más habitual.
+       También se observa que en algunos encuentros marca 0, 3 o 4 goles, aunque estos resultados son menos frecuentes. Por otro lado, el segundo gráfico indica que,
+       como visitante, el Girona recibe principalmente 1 o 2 goles por partido, destacando especialmente los encuentros en los que recibe 1 gol. Sin embargo, existen 
+       algunos partidos en los que ha recibido 0, 3 o incluso 5 goles. Al comparar ambos gráficos, se aprecia que
+       el Girona presenta una tendencia ofensiva relativamente constante como local, mientras que su rendimiento defensivo como visitante muestra cierta irregularidad.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
