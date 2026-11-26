@@ -209,7 +209,7 @@ else:
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
             
-        with open("mapa.html", "r", encoding="utf-8") as mapa:
+        with open("maymapa.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
     
         components.html(html_content,height=600)
