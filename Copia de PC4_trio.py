@@ -31,9 +31,9 @@ if opciones_2 == 'Presentaciones':
 
     texto = """
     Aquí escribe una presentación creativa sobre ti.
-    Mi Nombre es Mayte Montalva, tengo 24 años y soy de de Lima, Peru, ademas estudio publicidad en la PUCP. 
+    Mi Nombre es Mayte Montalva, tengo 24 años y soy de de Lima, Peru. Además estudio publicidad en la PUCP. 
     Lo que mas me gusta de mi carrera es como idear propuestas las marcas o empresas puedan acercarse a sus consumidores, haciendolo ademas de una manera creativa
-    y llamativa para diferenciarse de las demas opciones. en un futuro me gustria hacer una maestria en el extranjero, preferiblemente China, para especializarme en 
+    y llamativa para diferenciarse de las demas opciones. En un futuro me gustria hacer una maestria en el extranjero, preferiblemente China, para especializarme en 
     tecnicas publicitaria alineadas al marketing digital. En mi tiempo libre me gusta leer y escuchar musica.
     """
     col2.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>", unsafe_allow_html=True)
@@ -76,33 +76,25 @@ elif  opciones_2 == 'Experiencia':
     texto_4 = """
 
     En cuanto a mi experiencia con la programacion, llevé unas cuantas clases en mi último año de secundaria, aunque la verdad no aprendi mucho, 
-    asi que considero que esta clase es mi primera eperiencia en programacion. Al inicio me sentia bastante nerviosa ya que los programas y codigos
-    se ven intimidandes al inicio. Sin embargo, con el transcurso de las clases considero que fui tomando confianza. La programamcion me ha enseñado
+    asi que considero que esta clase es mi primera experiencia en programacion. Al inicio me sentia bastante nerviosa ya que los programas y codigos
+    se ven intimidandes al inicio. Sin embargo, con el transcurso de las clases considero que fui tomando confianza. La programacion me ha enseñado
     a ser bastante minuciosa y estar pendiente a los detalles, ya que un solo error malogra todo tu codigo. Me parece bastante interesante descubrir
-    como se crean las funciones de laspaginas web que utilizamos dia a dia. Por ultimo, siento que esta herrmienta puede ser de gran utilida para crear 
-    paginas web para empresas, por lo que es un gran aporte para mi CV en futuros trabajos
+    como se crean las funciones de las paginas web que utilizamos dia a dia. Por ultimo, siento que esta herramienta puede ser de gran utilidad para crear 
+    paginas web para empresas, por lo que es un gran aporte para mi CV en futuros trabajos.
     Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio? 
-    ¿Qué te ha enseñado la programación? 
-    ¿Qué te gusta de programar? 
-    ¿Qué te gustaría hacer con la programación en el futuro?
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_4}</div>", unsafe_allow_html=True)
     
     # Formato YouTube
-    st.subheader("🎥 Título apropiado video 1")
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
+    st.subheader("🎥 Mayte video 1")
+    st.video("https://youtu.be/TC1kO4Qa8T4")
     
-    # Formato Google Drive
-    st.subheader("🎥 Título apropiado video 2")
-
+    
     col1, col2, col3 = st.columns([1, 2, 1])
 
-    with col2:  
-        st.link_button("🎥 Texto del botón",
-                       "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link",
-                       use_container_width=True
-            )
+    st.subheader("🎥 Mayte video 2")
+    st.video("https://youtu.be/TC1kO4Qa8T4")
+            
 
     # Alumno b
     texto_5 = """
@@ -119,7 +111,7 @@ elif  opciones_2 == 'Experiencia':
     st.video("https://youtu.be/V-dHuWXDq74?feature=shared")
         
     # Formato Google Drive
-    st.subheader("🎥 Título apropiado video 2")
+    #st.subheader("🎥 Título apropiado video 2")
     
     col1, col2, col3 = st.columns([1, 2, 1])
     
