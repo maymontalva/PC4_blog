@@ -22,7 +22,7 @@ opciones_2 = option_menu(
     menu_icon="cast", default_index=0, orientation="horizontal")
 
 if opciones_2 == 'Presentaciones':
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: pink'>Nombre del blog</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: pink'>Blogcito <3</h1>", unsafe_allow_html=True)
 
     # Alumno a
     col1, col2 = st.columns(2)
