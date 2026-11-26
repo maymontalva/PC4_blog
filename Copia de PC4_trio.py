@@ -176,7 +176,7 @@ else:
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("maypastel.png", width=800)
-    elif grafico_seleccionado == 'maypastel.png':
+    elif grafico_seleccionado == 'mayhistograma.png':
         st.subheader("📊 Histograma Mayte: Goles Girona")
         texto_8 = """
        Este gráfico muestra que el Girona, jugando como local, suele anotar entre 1 y 2 goles por partido, siendo esta la frecuencia más habitual.
@@ -186,7 +186,21 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("maypastel.png", width=800)
+            st.image("mayhistograma.png", width=800)
+    elif grafico_seleccionado == 'maymapa.png':
+        st.subheader("📊 Mapa Mayte: Pilotos f1")
+        texto_8 = """
+       Elegí esta forma de organizar la información porque permite mostrar los datos de cada piloto de manera clara y ordenada dentro de una ventana emergente.
+       Primero utilicé elementos HTML como h2 para destacar el nombre del piloto, p para separar sus datos y b para resaltar información importante como la nacionalidad,
+       la escudería y el puntaje total. También agregué una imagen para facilitar su identificación y utilicé estilos como el texto centrado y los margenes para lograr
+       una presentación más agradable y fácil de leer. De esta manera, el usuario puede consultar la información de cada piloto 
+       simplemente haciendo clic en su marcador del mapa. Ademas agrege un color e icono llamativo al marcador del mapa para que este sea facil de encontrar. 
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with open("maymapa.html", "r", encoding="utf-8") as mapa:
+                html_content = mapa.read()
     
     else:
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
