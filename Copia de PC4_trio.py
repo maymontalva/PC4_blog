@@ -98,11 +98,11 @@ elif  opciones_2 == 'Experiencia':
 
     # Alumno b
     texto_5 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?
-    ¿Qué te ha enseñado la programación?
-    ¿Qué te gusta de programar? 
-    ¿Qué te gustaría hacer con la programación en el futuro?
+    Es mi primera vez programando. 
+    Al principio pensé que era muy difcil aprenderse todos los códigos, librerías, etc. pero en el transcurso del curso me di cuenta que si tiene su grado de dificultad, pero es posible aprender.
+    La programación me ha enseñado a ver el transfondo y funcionamiento de muchos programas.
+    La verdad no me gusta mucho la programación, pero considero que cuando programas con temas que te gustan se hace más divertida la experiencia.
+    En el futuro quisiera que la programación me ayude a completar investigaciones. ya que creo que hace más practico el manejo de datos.
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_5}</div>", unsafe_allow_html=True)
         
@@ -146,10 +146,11 @@ else:
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
-    graficos = ['Gráfico_1', 'Gráfico_2', 'Mapa_1'] 
+    graficos = ['barras.png', 'histograma_1', 'mapa_pucp.html', "mapa_vettel_raikkonen.html, "pastel.png", "wordcloud.png", 
+    "maywordcloud.png", "maybarras.png", "maymapa.html", "mayhistograma,png", "maypastel.png"] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
     
-    if grafico_seleccionado == 'Gráfico_1':
+    if grafico_seleccionado == 'barras.png':
         st.subheader("📊 Gráfico 1: Lenguas aisladas")
         texto_7 = """
         Interpretación del Gráfico 1
