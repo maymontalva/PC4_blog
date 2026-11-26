@@ -215,9 +215,8 @@ else:
     elif grafico_seleccionado == 'barras.png':
         st.subheader("📊 Grafico de Barras Matias: Tarjetas amarillas")
         texto_8 = """
-      El gráfico de barras presenta el promedio de tarjetas amarillas recibidas por los equipos de La Liga cuando juegan como visitantes. 
-      Se observa que siete equipos (encabezados por el Villarreal) registran el promedio más alto, con exactamente 3.0 tarjetas amarillas por partido fuera de casa.
-      En contraste, el resto de los equipos de la lista (como el Athletic Bilbao, Barcelona o Real Madrid) presentan un promedio menor, situado en 2.0 tarjetas. 
+      Se observa que la mayoría de los equipos mantiene un promedio entre 2 y 3 trajetas amarillas por partido fuera de casa. Celta se ubica en un rango intermedio, 
+      esto muestra un nivel de faltas moderado en comparación con el resto de equipos, existe una disciplina estandar por parte del equipo Celta dentro de la liga 
       
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
@@ -242,27 +241,27 @@ else:
     elif grafico_seleccionado == 'histograma_abi.png':
         st.subheader("📊 Histograma Gabi: Goles Getafe")
         texto_8 = """
-      Gráfico pastel de gabi: El gráfico muestra la distribución de los resultados obtenidos por el Getafe cuando juega como local.
-      Se observa un empate técnico en la mayor proporción: tanto las victorias como las derrotas representan un 42.1% del total de los partidos. 
-      Por otro lado, los empates constituyen la menor proporción, con apenas un 15.8%, lo que indica que es el resultado menos
-      frecuente para el equipo en casa. En síntesis, la distribución revela un desempeño local muy polarizado, donde el equipo o gana o pierde, 
-      pero rara vez reparte puntos.
+       En el histograma se muestra la distribución de los goles anotados por el Getafe cuando juega como local.
+       Se observa que la cantidad más frecuente es de 0 goles, con 8 partidos, lo que indica que el equipo tuvo dificultades para marcar en una parte importante de sus encuentros en casa. Asimismo, se registra una frecuencia de 5 partidos en los que anotó 1 gol y otros 5 en los que anotó 2 goles. Finalmente, solo en 1 partido logró anotar 3 goles. En general, los resultados muestran 
+       que el Getafe presenta una tendencia a marcar pocos goles cuando juega como local, ya que la mayor concentración de partidos se encuentra entre los 0 y 2 goles.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("histograma_abi.png", width=800)
-    elif grafico_seleccionado == 'histograma_abi.png':
-        st.subheader("Wordcloud Gabi: ")
+           
+    elif grafico_seleccionado == 'nube_de_gabi.png':
+        st.subheader("Wordcloud Gabi: Crimen y castigo")
         texto_8 = """
-      Esta nube de palabras resalta las pararas mas frecuentes del libro "" escrito por 
+      Esta nube de palabras resalta las palabras mas frecuentes del libro "Crimen y castigo", escrito por Fiodor Dostovyeski 
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("nube_de_gabi.png", width=800)
+           
     elif grafico_seleccionado == 'histograma_1.png':
         st.subheader("📊 Histograma Matias: Goles Celta")
         texto_8 = """
@@ -276,7 +275,9 @@ else:
     elif grafico_seleccionado == 'pastel.png':
         st.subheader("📊 Grafico pastel Matias: Resultados Celta")
         texto_8 = """
-      Interpretacion
+      Observamos que la mayor proporción corresponde a victorias, seguida de empates y, en menor proporción, derrotas fuera de casa. La diferencia entre
+      victorias y derrotas es notable y favorable para el equipo. Esto demuestra que Celta tiene una buena capacidad para conseguir victorias cuando
+      juega fuera de casa.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
@@ -284,9 +285,9 @@ else:
         with col2:
             st.image("pastel.png", width=800)
     elif grafico_seleccionado == 'wordcloud.png':
-        st.subheader(" Wordcloud Matias: Crimen y castigo")
+        st.subheader(" Wordcloud Matias: El principito")
         texto_8 = """
-      Esta nube de palabras resalta las palabras mas frecuentes del libro "Crimen y castigo", escrito por Fiodor Dostovyeski
+      Esta nube de palabras resalta las palabras mas frecuentes del libro "El pincipito", escrito por Antoine de Saint-Exuperi
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
