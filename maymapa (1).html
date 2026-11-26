@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7d4335922b8e7cb9454d04163b558ed {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c7d4335922b8e7cb9454d04163b558ed" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c7d4335922b8e7cb9454d04163b558ed = L.map(
+                "map_c7d4335922b8e7cb9454d04163b558ed",
+                {
+                    center: [21.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+
+            
+
+        
+    
+            var tile_layer_73b0265b85628b42a634c38b25f7e992 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap contributors\u003c/a\u003e | Datos bajo licencia \u003ca href=\"https://opendatacommons.org/licenses/odbl/\"\u003eODbL\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "referrerPolicy": "strict-origin",
+}
+
+            );
+        
+    
+            tile_layer_73b0265b85628b42a634c38b25f7e992.addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            tile_layer_73b0265b85628b42a634c38b25f7e992.addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var marker_f304b6774fc93d36338aa47af5127495 = L.marker(
+                [52.1326, 5.2913],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_017b594c8a43688513099a5f9b7f6f13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_831ca0ba8c8bb4acdb0e729a2de85c66 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_672f3177efec73efbf66912a1ac080ad = $(`<div id="html_672f3177efec73efbf66912a1ac080ad" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>M. VERSTAPPEN</h2>         <p><b>Nacionalidad:</b> Países Bajos</p>         <p><b>Escudería:</b> Red Bull</p>         <p><b>Puntaje Total:</b> 204 </p>         <img src='https://cdn-5.motorsport.com/images/mgl/6D1XbeV0/s800/max-verstappen-red-bull-racing.jpg' alt='M. VERSTAPPEN' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_831ca0ba8c8bb4acdb0e729a2de85c66.setContent(html_672f3177efec73efbf66912a1ac080ad);
+            
+        
+
+        marker_f304b6774fc93d36338aa47af5127495.bindPopup(popup_831ca0ba8c8bb4acdb0e729a2de85c66)
+        ;
+
+        
+    
+    
+            marker_f304b6774fc93d36338aa47af5127495.bindTooltip(
+                `<div>
+                     M. VERSTAPPEN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f304b6774fc93d36338aa47af5127495.setIcon(icon_017b594c8a43688513099a5f9b7f6f13);
+            
+    
+            var marker_9fb9acad2f08580374814a99e89de6b4 = L.marker(
+                [55.3781, -3.436],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_ad598a8b96248ec10891fd97b15f1532 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d75f9a04d6214b8fd1f1b7409a7f991 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ee9625287c1d7301092c18bd1883ba42 = $(`<div id="html_ee9625287c1d7301092c18bd1883ba42" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>L. HAMILTON</h2>         <p><b>Nacionalidad:</b> Reino Unido</p>         <p><b>Escudería:</b> Mercedes</p>         <p><b>Puntaje Total:</b> 380 </p>         <img src='https://cdn-2.motorsport.com/images/amp/6grBLJGY/s6/lewis-hamilton-ferrari.jpg' alt='L. HAMILTON' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_9d75f9a04d6214b8fd1f1b7409a7f991.setContent(html_ee9625287c1d7301092c18bd1883ba42);
+            
+        
+
+        marker_9fb9acad2f08580374814a99e89de6b4.bindPopup(popup_9d75f9a04d6214b8fd1f1b7409a7f991)
+        ;
+
+        
+    
+    
+            marker_9fb9acad2f08580374814a99e89de6b4.bindTooltip(
+                `<div>
+                     L. HAMILTON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9fb9acad2f08580374814a99e89de6b4.setIcon(icon_ad598a8b96248ec10891fd97b15f1532);
+            
+    
+            var marker_72974550444cdc77c51f36af4ac3e049 = L.marker(
+                [52.1326, 5.2913],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_e4919f9d2a8a7122a9dce9a72d074c9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ebde9e5b14c93782b799b554130aa9c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c5bb7916ed86c4d59cddbc90185a2f5b = $(`<div id="html_c5bb7916ed86c4d59cddbc90185a2f5b" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>M. VERSTAPPEN</h2>         <p><b>Nacionalidad:</b> Países Bajos</p>         <p><b>Escudería:</b> Red Bull</p>         <p><b>Puntaje Total:</b> 204 </p>         <img src='https://cdn-5.motorsport.com/images/mgl/6D1XbeV0/s800/max-verstappen-red-bull-racing.jpg' alt='M. VERSTAPPEN' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_6ebde9e5b14c93782b799b554130aa9c.setContent(html_c5bb7916ed86c4d59cddbc90185a2f5b);
+            
+        
+
+        marker_72974550444cdc77c51f36af4ac3e049.bindPopup(popup_6ebde9e5b14c93782b799b554130aa9c)
+        ;
+
+        
+    
+    
+            marker_72974550444cdc77c51f36af4ac3e049.bindTooltip(
+                `<div>
+                     M. VERSTAPPEN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72974550444cdc77c51f36af4ac3e049.setIcon(icon_e4919f9d2a8a7122a9dce9a72d074c9d);
+            
+    
+            var marker_69c837eae34b53cec1e914bf97fa0265 = L.marker(
+                [55.3781, -3.436],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_32a6088cacf651e6283a796b6f1709e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ea7973b89a8df22168a4b08f20bff87 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b6b5473988575cb0d62e1060cb76f5bb = $(`<div id="html_b6b5473988575cb0d62e1060cb76f5bb" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>L. HAMILTON</h2>         <p><b>Nacionalidad:</b> Reino Unido</p>         <p><b>Escudería:</b> Mercedes</p>         <p><b>Puntaje Total:</b> 380 </p>         <img src='https://cdn-2.motorsport.com/images/amp/6grBLJGY/s6/lewis-hamilton-ferrari.jpg' alt='L. HAMILTON' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_4ea7973b89a8df22168a4b08f20bff87.setContent(html_b6b5473988575cb0d62e1060cb76f5bb);
+            
+        
+
+        marker_69c837eae34b53cec1e914bf97fa0265.bindPopup(popup_4ea7973b89a8df22168a4b08f20bff87)
+        ;
+
+        
+    
+    
+            marker_69c837eae34b53cec1e914bf97fa0265.bindTooltip(
+                `<div>
+                     L. HAMILTON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69c837eae34b53cec1e914bf97fa0265.setIcon(icon_32a6088cacf651e6283a796b6f1709e8);
+            
+    
+            var marker_5e0baeede1ccf749a073c7d1aa106f11 = L.marker(
+                [52.1326, 5.2913],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_3066d2a95f426437e05afd39b4a394af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f17042f00333ee56cda884a432e8aea7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_be4dd0205bcdc5f61493973120f35cd0 = $(`<div id="html_be4dd0205bcdc5f61493973120f35cd0" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>M. VERSTAPPEN</h2>         <p><b>Nacionalidad:</b> Países Bajos</p>         <p><b>Escudería:</b> Red Bull</p>         <p><b>Puntaje Total:</b> 204 </p>         <img src='https://cdn-5.motorsport.com/images/mgl/6D1XbeV0/s800/max-verstappen-red-bull-racing.jpg' alt='M. VERSTAPPEN' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_f17042f00333ee56cda884a432e8aea7.setContent(html_be4dd0205bcdc5f61493973120f35cd0);
+            
+        
+
+        marker_5e0baeede1ccf749a073c7d1aa106f11.bindPopup(popup_f17042f00333ee56cda884a432e8aea7)
+        ;
+
+        
+    
+    
+            marker_5e0baeede1ccf749a073c7d1aa106f11.bindTooltip(
+                `<div>
+                     M. VERSTAPPEN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e0baeede1ccf749a073c7d1aa106f11.setIcon(icon_3066d2a95f426437e05afd39b4a394af);
+            
+    
+            var marker_a82d442384a2190fcb7aabfe06d119db = L.marker(
+                [55.3781, -3.436],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_198cd4d707ade7e8350c5bfdfdeb6933 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01125b69f81e023235c28f3fd7009ed7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_89feaec6f26735a6e441a71ba9218008 = $(`<div id="html_89feaec6f26735a6e441a71ba9218008" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>L. HAMILTON</h2>         <p><b>Nacionalidad:</b> Reino Unido</p>         <p><b>Escudería:</b> Mercedes</p>         <p><b>Puntaje Total:</b> 380 </p>         <img src='https://cdn-2.motorsport.com/images/amp/6grBLJGY/s6/lewis-hamilton-ferrari.jpg' alt='L. HAMILTON' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_01125b69f81e023235c28f3fd7009ed7.setContent(html_89feaec6f26735a6e441a71ba9218008);
+            
+        
+
+        marker_a82d442384a2190fcb7aabfe06d119db.bindPopup(popup_01125b69f81e023235c28f3fd7009ed7)
+        ;
+
+        
+    
+    
+            marker_a82d442384a2190fcb7aabfe06d119db.bindTooltip(
+                `<div>
+                     L. HAMILTON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a82d442384a2190fcb7aabfe06d119db.setIcon(icon_198cd4d707ade7e8350c5bfdfdeb6933);
+            
+    
+            tile_layer_73b0265b85628b42a634c38b25f7e992.addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+                marker_f304b6774fc93d36338aa47af5127495.setIcon(icon_017b594c8a43688513099a5f9b7f6f13);
+            
+    
+                marker_9fb9acad2f08580374814a99e89de6b4.setIcon(icon_ad598a8b96248ec10891fd97b15f1532);
+            
+    
+                marker_72974550444cdc77c51f36af4ac3e049.setIcon(icon_e4919f9d2a8a7122a9dce9a72d074c9d);
+            
+    
+                marker_69c837eae34b53cec1e914bf97fa0265.setIcon(icon_32a6088cacf651e6283a796b6f1709e8);
+            
+    
+                marker_5e0baeede1ccf749a073c7d1aa106f11.setIcon(icon_3066d2a95f426437e05afd39b4a394af);
+            
+    
+                marker_a82d442384a2190fcb7aabfe06d119db.setIcon(icon_198cd4d707ade7e8350c5bfdfdeb6933);
+            
+    
+            var marker_e579f19f6961722a5aa1a83aa7e635c5 = L.marker(
+                [52.1326, 5.2913],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_2330babada18422b9997a70eda9ac8e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5d56d417119e59c416fc05ae0b51a44 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_73ce324f6941aebbe4bb26f6d0f52b53 = $(`<div id="html_73ce324f6941aebbe4bb26f6d0f52b53" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>M. VERSTAPPEN</h2>         <p><b>Nacionalidad:</b> Países Bajos</p>         <p><b>Escudería:</b> Red Bull</p>         <p><b>Puntaje Total:</b> 204 </p>         <img src='https://cdn-5.motorsport.com/images/mgl/6D1XbeV0/s800/max-verstappen-red-bull-racing.jpg' alt='M. VERSTAPPEN' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_c5d56d417119e59c416fc05ae0b51a44.setContent(html_73ce324f6941aebbe4bb26f6d0f52b53);
+            
+        
+
+        marker_e579f19f6961722a5aa1a83aa7e635c5.bindPopup(popup_c5d56d417119e59c416fc05ae0b51a44)
+        ;
+
+        
+    
+    
+            marker_e579f19f6961722a5aa1a83aa7e635c5.bindTooltip(
+                `<div>
+                     M. VERSTAPPEN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e579f19f6961722a5aa1a83aa7e635c5.setIcon(icon_2330babada18422b9997a70eda9ac8e2);
+            
+    
+            var marker_199ba34d81e694f05b34f559a8698b72 = L.marker(
+                [55.3781, -3.436],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_ba7ecf7e53b0f1944c43dc68d3bb2a96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d188b49b06de71c02e8e13f15401013c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_085632a2e7860803442ded137c5b39bc = $(`<div id="html_085632a2e7860803442ded137c5b39bc" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>L. HAMILTON</h2>         <p><b>Nacionalidad:</b> Reino Unido</p>         <p><b>Escudería:</b> Mercedes</p>         <p><b>Puntaje Total:</b> 380 </p>         <img src='https://cdn-2.motorsport.com/images/amp/6grBLJGY/s6/lewis-hamilton-ferrari.jpg' alt='L. HAMILTON' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_d188b49b06de71c02e8e13f15401013c.setContent(html_085632a2e7860803442ded137c5b39bc);
+            
+        
+
+        marker_199ba34d81e694f05b34f559a8698b72.bindPopup(popup_d188b49b06de71c02e8e13f15401013c)
+        ;
+
+        
+    
+    
+            marker_199ba34d81e694f05b34f559a8698b72.bindTooltip(
+                `<div>
+                     L. HAMILTON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_199ba34d81e694f05b34f559a8698b72.setIcon(icon_ba7ecf7e53b0f1944c43dc68d3bb2a96);
+            
+    
+            tile_layer_73b0265b85628b42a634c38b25f7e992.addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+                marker_f304b6774fc93d36338aa47af5127495.setIcon(icon_017b594c8a43688513099a5f9b7f6f13);
+            
+    
+                marker_9fb9acad2f08580374814a99e89de6b4.setIcon(icon_ad598a8b96248ec10891fd97b15f1532);
+            
+    
+                marker_72974550444cdc77c51f36af4ac3e049.setIcon(icon_e4919f9d2a8a7122a9dce9a72d074c9d);
+            
+    
+                marker_69c837eae34b53cec1e914bf97fa0265.setIcon(icon_32a6088cacf651e6283a796b6f1709e8);
+            
+    
+                marker_5e0baeede1ccf749a073c7d1aa106f11.setIcon(icon_3066d2a95f426437e05afd39b4a394af);
+            
+    
+                marker_a82d442384a2190fcb7aabfe06d119db.setIcon(icon_198cd4d707ade7e8350c5bfdfdeb6933);
+            
+    
+                marker_e579f19f6961722a5aa1a83aa7e635c5.setIcon(icon_2330babada18422b9997a70eda9ac8e2);
+            
+    
+                marker_199ba34d81e694f05b34f559a8698b72.setIcon(icon_ba7ecf7e53b0f1944c43dc68d3bb2a96);
+            
+    
+            var marker_5e93cc4a5ca2309fa6692479fac5d3eb = L.marker(
+                [52.1326, 5.2913],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_845de52f6b54c34926e6a5898bd75314 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abebad18a50400effbbded96921b636d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ec5fe4d0bd185e216dcc9162c3379acf = $(`<div id="html_ec5fe4d0bd185e216dcc9162c3379acf" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>M. VERSTAPPEN</h2>         <p><b>Nacionalidad:</b> Países Bajos</p>         <p><b>Escudería:</b> Red Bull</p>         <p><b>Puntaje Total:</b> 204 </p>         <img src='https://cdn-5.motorsport.com/images/mgl/6D1XbeV0/s800/max-verstappen-red-bull-racing.jpg' alt='M. VERSTAPPEN' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_abebad18a50400effbbded96921b636d.setContent(html_ec5fe4d0bd185e216dcc9162c3379acf);
+            
+        
+
+        marker_5e93cc4a5ca2309fa6692479fac5d3eb.bindPopup(popup_abebad18a50400effbbded96921b636d)
+        ;
+
+        
+    
+    
+            marker_5e93cc4a5ca2309fa6692479fac5d3eb.bindTooltip(
+                `<div>
+                     M. VERSTAPPEN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e93cc4a5ca2309fa6692479fac5d3eb.setIcon(icon_845de52f6b54c34926e6a5898bd75314);
+            
+    
+            var marker_7d27b199dc843d4d348ef92eccaad8be = L.marker(
+                [55.3781, -3.436],
+                {
+}
+            ).addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+            var icon_108749918b91c7ce91e85cac343ff3b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "heart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa7b4b74f301d797b24f4da32c7f5edb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_89764358738b34d2103e4f36e3841897 = $(`<div id="html_89764358738b34d2103e4f36e3841897" style="width: 100.0%; height: 100.0%;">      <div style="text-align:center; margin-bottom:15px;">         <h2>L. HAMILTON</h2>         <p><b>Nacionalidad:</b> Reino Unido</p>         <p><b>Escudería:</b> Mercedes</p>         <p><b>Puntaje Total:</b> 380 </p>         <img src='https://cdn-2.motorsport.com/images/amp/6grBLJGY/s6/lewis-hamilton-ferrari.jpg' alt='L. HAMILTON' style='width: 100%; border-radius: 5px;'>     <div>     </div>`)[0];
+                popup_aa7b4b74f301d797b24f4da32c7f5edb.setContent(html_89764358738b34d2103e4f36e3841897);
+            
+        
+
+        marker_7d27b199dc843d4d348ef92eccaad8be.bindPopup(popup_aa7b4b74f301d797b24f4da32c7f5edb)
+        ;
+
+        
+    
+    
+            marker_7d27b199dc843d4d348ef92eccaad8be.bindTooltip(
+                `<div>
+                     L. HAMILTON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d27b199dc843d4d348ef92eccaad8be.setIcon(icon_108749918b91c7ce91e85cac343ff3b8);
+            
+    
+            tile_layer_73b0265b85628b42a634c38b25f7e992.addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+                marker_f304b6774fc93d36338aa47af5127495.setIcon(icon_017b594c8a43688513099a5f9b7f6f13);
+            
+    
+                marker_9fb9acad2f08580374814a99e89de6b4.setIcon(icon_ad598a8b96248ec10891fd97b15f1532);
+            
+    
+                marker_72974550444cdc77c51f36af4ac3e049.setIcon(icon_e4919f9d2a8a7122a9dce9a72d074c9d);
+            
+    
+                marker_69c837eae34b53cec1e914bf97fa0265.setIcon(icon_32a6088cacf651e6283a796b6f1709e8);
+            
+    
+                marker_5e0baeede1ccf749a073c7d1aa106f11.setIcon(icon_3066d2a95f426437e05afd39b4a394af);
+            
+    
+                marker_a82d442384a2190fcb7aabfe06d119db.setIcon(icon_198cd4d707ade7e8350c5bfdfdeb6933);
+            
+    
+                marker_e579f19f6961722a5aa1a83aa7e635c5.setIcon(icon_2330babada18422b9997a70eda9ac8e2);
+            
+    
+                marker_199ba34d81e694f05b34f559a8698b72.setIcon(icon_ba7ecf7e53b0f1944c43dc68d3bb2a96);
+            
+    
+                marker_5e93cc4a5ca2309fa6692479fac5d3eb.setIcon(icon_845de52f6b54c34926e6a5898bd75314);
+            
+    
+                marker_7d27b199dc843d4d348ef92eccaad8be.setIcon(icon_108749918b91c7ce91e85cac343ff3b8);
+            
+    
+            tile_layer_73b0265b85628b42a634c38b25f7e992.addTo(map_c7d4335922b8e7cb9454d04163b558ed);
+        
+    
+                marker_f304b6774fc93d36338aa47af5127495.setIcon(icon_017b594c8a43688513099a5f9b7f6f13);
+            
+    
+                marker_9fb9acad2f08580374814a99e89de6b4.setIcon(icon_ad598a8b96248ec10891fd97b15f1532);
+            
+    
+                marker_72974550444cdc77c51f36af4ac3e049.setIcon(icon_e4919f9d2a8a7122a9dce9a72d074c9d);
+            
+    
+                marker_69c837eae34b53cec1e914bf97fa0265.setIcon(icon_32a6088cacf651e6283a796b6f1709e8);
+            
+    
+                marker_5e0baeede1ccf749a073c7d1aa106f11.setIcon(icon_3066d2a95f426437e05afd39b4a394af);
+            
+    
+                marker_a82d442384a2190fcb7aabfe06d119db.setIcon(icon_198cd4d707ade7e8350c5bfdfdeb6933);
+            
+    
+                marker_e579f19f6961722a5aa1a83aa7e635c5.setIcon(icon_2330babada18422b9997a70eda9ac8e2);
+            
+    
+                marker_199ba34d81e694f05b34f559a8698b72.setIcon(icon_ba7ecf7e53b0f1944c43dc68d3bb2a96);
+            
+    
+                marker_5e93cc4a5ca2309fa6692479fac5d3eb.setIcon(icon_845de52f6b54c34926e6a5898bd75314);
+            
+    
+                marker_7d27b199dc843d4d348ef92eccaad8be.setIcon(icon_108749918b91c7ce91e85cac343ff3b8);
+            
+</script>
+</html>
