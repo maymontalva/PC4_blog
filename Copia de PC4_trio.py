@@ -165,7 +165,7 @@ else:
                 st.image("maybarras.png", width=800)
 
     elif grafico_seleccionado == 'maypastel.png':
-        st.subheader("📊 Gráfico pastel Mayte: Goles Girona")
+        st.subheader("📊 Gráfico pastel Mayte: Resultados Girona")
         texto_8 = """
         El gráfico muestra que el Girona, jugando como local durante la temporada 2025-2026, ha obtenido un mayor porcentaje de derrotas, con un 36,8 % de los partidos. 
         Por otro lado, el 31,6 % de los encuentros terminaron en victoria y el mismo porcentaje en empate. 
@@ -188,17 +188,107 @@ else:
         with col2:
             st.image("mayhistograma.png", width=800)
     elif grafico_seleccionado == 'maywordcloud.png':
-        st.subheader("📊 Wordcloud Mayte: Risas y Cultura")
+        st.subheader(" Wordcloud Mayte: Risas y Cultura")
         texto_8 = """
-       Esta nube de palabras resalta el contenido del 1er capitulo del libro "Risas y Cultura", escrito por luis peirano. En este libose hace un analisi de
-       los personaes y dinamicas de famoso programa televisivo de los 90 "Risas y Cultura" de panamericana television, asi como su impacto en la sociedad peruana
+       Esta nube de palabras resalta el contenido del 1er capitulo del libro "Risas y Cultura", escrito por Luis Peirano. En este libro se hace un analisis de
+       los personajes y dinamicas de famoso programa televisivo de los 90 "Risas y Cultura" de Panamericana television, asi como su impacto en la sociedad peruana.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("maywordcloud.png", width=800)
+    elif grafico_seleccionado == 'grafico_de_barras_gabi.png':
+        st.subheader("📊 Grafico de Barras Gabi: Tarjetas amarillas liga")
+        texto_8 = """
+      Gráfico de barras: El gráfico de barras presenta el promedio de tarjetas amarillas recibidas por los equipos de La Liga cuando juegan como visitantes. 
+      Se observa que siete equipos (encabezados por el Villarreal) registran el promedio más alto, con exactamente 3.0 tarjetas amarillas por partido fuera de casa.
+      En contraste, el resto de los equipos de la lista (como el Athletic Bilbao, Barcelona o Real Madrid) presentan un promedio menor, situado en 2.0 tarjetas. 
+      Es importante destacar que el Getafe se encuentra en el grupo de mayor
+      amonestación (3.0). Esta comparación permite identificar que, en esta muestra, la disciplina fuera de casa se divide claramente en dos bloques bien diferenciados.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("grafico_de_barras_gabi.png", width=800)
+    elif grafico_seleccionado == 'barras.png':
+        st.subheader("📊 Grafico de Barras Matias: Tarjetas amarillas")
+        texto_8 = """
+      El gráfico de barras presenta el promedio de tarjetas amarillas recibidas por los equipos de La Liga cuando juegan como visitantes. 
+      Se observa que siete equipos (encabezados por el Villarreal) registran el promedio más alto, con exactamente 3.0 tarjetas amarillas por partido fuera de casa.
+      En contraste, el resto de los equipos de la lista (como el Athletic Bilbao, Barcelona o Real Madrid) presentan un promedio menor, situado en 2.0 tarjetas. 
+      
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    elif grafico_seleccionado == 'grafico_pastel_gabi.png':
+        st.subheader("📊 Grafico Pastel Gabi: Resultados Getafe")
+        texto_8 = """
+      Gráfico pastel de gabi: El gráfico muestra la distribución de los resultados obtenidos por el Getafe cuando juega como local.
+      Se observa un empate técnico en la mayor proporción: tanto las victorias como las derrotas representan un 42.1% del total de los partidos. 
+      Por otro lado, los empates constituyen la menor proporción, con apenas un 15.8%, lo que indica que es el resultado menos
+      frecuente para el equipo en casa. En síntesis, la distribución revela un desempeño local muy polarizado, donde el equipo o gana o pierde, 
+      pero rara vez reparte puntos.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("grafico_pastel_gabi.png", width=800)
+    elif grafico_seleccionado == 'histograma_abi.png':
+        st.subheader("📊 Histograma Gabi: Goles Getafe")
+        texto_8 = """
+      Gráfico pastel de gabi: El gráfico muestra la distribución de los resultados obtenidos por el Getafe cuando juega como local.
+      Se observa un empate técnico en la mayor proporción: tanto las victorias como las derrotas representan un 42.1% del total de los partidos. 
+      Por otro lado, los empates constituyen la menor proporción, con apenas un 15.8%, lo que indica que es el resultado menos
+      frecuente para el equipo en casa. En síntesis, la distribución revela un desempeño local muy polarizado, donde el equipo o gana o pierde, 
+      pero rara vez reparte puntos.
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("nube_de_gabi.png", width=800)
+    elif grafico_seleccionado == 'histograma_abi.png':
+        st.subheader("Wordcloud Gabi: ")
+        texto_8 = """
+      Esta nube de palabras resalta las pararas mas frecuentes del libro "" escrito por 
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("nube_de_gabi.png", width=800)
+    elif grafico_seleccionado == 'histograma_1.png':
+        st.subheader("📊 Histograma Matias: Goles Celta")
+        texto_8 = """
+      Interpretacion
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("histograma_1.png", width=800)
+    elif grafico_seleccionado == 'pastel.png':
+        st.subheader("📊 Grafico pastel Matias: Resultados Celta")
+        texto_8 = """
+      Interpretacion
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("pastel.png", width=800)
+    elif grafico_seleccionado == 'wordcloud.png':
+        st.subheader(" Wordcloud Matias: Crimen y castigo")
+        texto_8 = """
+      Esta nube de palabras resalta las palabras mas frecuentes del libro "Crimen y castigo", escrito por Fiodor Dostovyeski
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("wordcloud.png", width=800) 
     else:
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
         texto_9 = """
