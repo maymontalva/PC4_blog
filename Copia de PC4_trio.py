@@ -301,20 +301,38 @@ else:
             st.image("wordcloud.png", width=800) 
            
     elif grafico_seleccionado == 'mapa_pucp.html':
-        st.subheader(" 🗺️ Mapa Gabi: Pilotos F1")
+        st.subheader(" 🗺️ Mapa Gabi: Puerta Principal")
         texto_8 = """
-      Esta nube de palabras resalta las palabras mas frecuentes del libro "El pincipito", escrito por Antoine de Saint-Exuperi
+      Este Mapa muestra la ubicacion de la puerta principal de la PUCP
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
         with open("mapa_pucp.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
+    elif grafico_seleccionado == 'mapa_vettel_raikkonen.html':
+        st.subheader(" 🗺️ Mapa Matias: Pilotos F1")
+        texto_8 = """
+      Para este diseño, elegí una distribución vertical y centrada porque permite identificar al piloto y leer sus datos de manera
+      ordenada: nombre, imagen, escudería y puntaje. Asismiso elegí dos pilotos que pertenecen a la misma escudería, Ferrari, esto
+      facilita una comparación entre ambos.
+      Los elementos html, como el h2, lo use para el nombre del piloto y funciona como título princiapl, tiene un color azul para que resalte.
+      img: muestra la fotografía del piloto en un tamaño cuadrado de 150x150 px y border radius de 10 px para darle un borde redondo y que se vea más suave
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        with open("mapa_vettel_raikkonen.html", "r", encoding="utf-8") as mapa:
+                html_content = mapa.read()
     
         components.html(html_content,height=600)
     else:
-        st.subheader("🗺️ Mapa 1: Distribución geográfica")
+        st.subheader("🗺️ Mapa Mayte: Nacionalidad pilotos")
         texto_9 = """
-        Interpretación del mapa
+        Elegí esta forma de organizar la información porque permite mostrar los datos de cada piloto de manera clara y ordenada dentro de una ventana 
+        emergente. Primero utilicé elementos HTML como h2 para destacar el nombre del piloto, p para separar sus datos y b para resaltar información
+        importante como la nacionalidad, la escudería y el puntaje total. También agregué una imagen para facilitar su identificación y utilicé estilos
+        como el texto centrado y los margenes para lograr una presentación más agradable y fácil de leer. De esta manera, el usuario puede consultar la 
+        información de cada piloto simplemente haciendo clic en su marcador del mapa. Ademas agrege un color e icono llamativo al marcador del mapa para 
+        que este sea facil de encontrar.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
             
