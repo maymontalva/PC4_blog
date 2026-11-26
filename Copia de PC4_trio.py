@@ -30,7 +30,6 @@ if opciones_2 == 'Presentaciones':
     col1.image("May.jpg", caption='Mayte', width=300)
 
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
     Mi Nombre es Mayte Montalva, tengo 24 años y soy de de Lima, Peru. Además estudio publicidad en la PUCP. 
     Lo que mas me gusta de mi carrera es como idear propuestas las marcas o empresas puedan acercarse a sus consumidores, haciendolo ademas de una manera creativa
     y llamativa para diferenciarse de las demas opciones. En un futuro me gustria hacer una maestria en el extranjero, preferiblemente China, para especializarme en 
@@ -74,7 +73,6 @@ elif  opciones_2 == 'Experiencia':
 
     # Alumno a
     texto_4 = """
-
     En cuanto a mi experiencia con la programacion, llevé unas cuantas clases en mi último año de secundaria, aunque la verdad no aprendi mucho, 
     asi que considero que esta clase es mi primera experiencia en programacion. Al inicio me sentia bastante nerviosa ya que los programas y codigos
     se ven intimidandes al inicio. Sin embargo, con el transcurso de las clases considero que fui tomando confianza. La programacion me ha enseñado
