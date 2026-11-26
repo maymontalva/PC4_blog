@@ -252,7 +252,7 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("nube_de_gabi.png", width=800)
+            st.image("histograma_abi.png", width=800)
     elif grafico_seleccionado == 'histograma_abi.png':
         st.subheader("Wordcloud Gabi: ")
         texto_8 = """
