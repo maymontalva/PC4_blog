@@ -151,27 +151,42 @@ else:
     "histograma_abi.png", "nube_de_gabi.png", "grafico_pastel_gabi.png" ] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
     
-    if grafico_seleccionado == 'barras.png':
-        st.subheader("📊 Gráfico 1: Lenguas aisladas")
+    if grafico_seleccionado == 'maybarras.png':
+        st.subheader("📊 Grafico de barras Mayte: Tarjetas rojas del Girona")
         texto_7 = """
-        Interpretación del Gráfico 1
+        El gráfico muestra el promedio de tarjetas rojas recibidas por los equipos jugando como locales. 
+        Se observa que el Girona presenta el promedio más alto, con aproximadamente 0,37 tarjetas rojas,
+        seguido del Real Madrid y el Oviedo. En cambio, equipos como el Barcelona, Betis y Valencia no registran tarjetas rojas en los datos representados.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
 
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-                st.image("aisladas_base_datos.png", width=800)
+                st.image("maybarras.png", width=800)
 
-    elif grafico_seleccionado == 'Gráfico_2':
-        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+    elif grafico_seleccionado == 'maypastel.png':
+        st.subheader("📊 Gráfico pastel Mayte: Goles Girona")
         texto_8 = """
-        Interpretación del Gráfico 2
+        El gráfico muestra que el Girona, jugando como local durante la temporada 2025-2026, ha obtenido un mayor porcentaje de derrotas, con un 36,8 % de los partidos. 
+        Por otro lado, el 31,6 % de los encuentros terminaron en victoria y el mismo porcentaje en empate. 
+        Estos resultados reflejan que el equipo ha tenido un rendimiento irregular en casa, ya que las derrotas superan ligeramente a las victorias y los empates.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("lengua_familia_GB.png", width=800)
+            st.image("maypastel.png", width=800)
+   elif grafico_seleccionado == 'maypastel.png':
+        st.subheader("📊 Histograma Mayte: Goles Girona")
+        texto_8 = """
+       Este gráfico muestra que el Girona, jugando como local, suele anotar entre 1 y 2 goles por partido, siendo esta la frecuencia más habitual.
+       También se observa que en algunos encuentros marca 0, 3 o 4 goles, aunque estos resultados son menos frecuentes. 
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("maypastel.png", width=800)
     
     else:
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
