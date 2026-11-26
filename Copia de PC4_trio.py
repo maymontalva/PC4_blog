@@ -188,19 +188,16 @@ else:
         with col2:
             st.image("mayhistograma.png", width=800)
     elif grafico_seleccionado == 'maymapa.png':
-        st.subheader("📊 Mapa Mayte: Pilotos f1")
+        st.subheader("📊 Wordcloud Mayte: Risas y Cultura")
         texto_8 = """
-       Elegí esta forma de organizar la información porque permite mostrar los datos de cada piloto de manera clara y ordenada dentro de una ventana emergente.
-       Primero utilicé elementos HTML como h2 para destacar el nombre del piloto, p para separar sus datos y b para resaltar información importante como la nacionalidad,
-       la escudería y el puntaje total. También agregué una imagen para facilitar su identificación y utilicé estilos como el texto centrado y los margenes para lograr
-       una presentación más agradable y fácil de leer. De esta manera, el usuario puede consultar la información de cada piloto 
-       simplemente haciendo clic en su marcador del mapa. Ademas agrege un color e icono llamativo al marcador del mapa para que este sea facil de encontrar. 
+       Esta nube de palabras resalta el contenido del 1er capitulo del libro "Risas y Cultura", escrito por luis peirano. En este libose hace un analisi de
+       los personaes y dinamicas de famoso programa televisivo de los 90 "Risas y Cultura" de panamericana television, asi como su impacto en la sociedad peruana
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
-        with open("maymapa.html", "r", encoding="utf-8") as mapa:
-                html_content = mapa.read()
+        with col2:
+            st.image("maywordcloud.png", width=800)
     
     else:
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
