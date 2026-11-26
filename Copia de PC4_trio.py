@@ -187,7 +187,7 @@ else:
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("mayhistograma.png", width=800)
-    elif grafico_seleccionado == 'maymapa.png':
+    elif grafico_seleccionado == 'maywordcloud.png':
         st.subheader("📊 Wordcloud Mayte: Risas y Cultura")
         texto_8 = """
        Esta nube de palabras resalta el contenido del 1er capitulo del libro "Risas y Cultura", escrito por luis peirano. En este libose hace un analisi de
