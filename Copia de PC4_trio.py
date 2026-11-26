@@ -129,19 +129,16 @@ elif  opciones_2 == 'Experiencia':
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
         
     # Formato YouTube
-    st.subheader("🎥 Título apropiado video 1")
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
+    st.subheader("🎥 Matias video 1")
+    st.video("https://youtu.be/eE7hFwfy8g8?si=X5Aw_EzsirED0W7j")
         
     # Formato Google Drive
-    st.subheader("🎥 Título apropiado video 2")
+    #st.subheader("🎥 Matias video 2")
     
     col1, col2, col3 = st.columns([1, 2, 1])
     
-    with col2:  
-        st.link_button("🎥 Texto del botón",
-                       "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link",
-                       use_container_width=True
-            )
+    st.subheader("🎥 Matias video 2")
+    st.video("https://youtu.be/RTVwgBjDewU?si=EGDu6QW29c7BNyER")
             
 else:
 
