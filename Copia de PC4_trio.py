@@ -176,7 +176,7 @@ else:
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("maypastel.png", width=800)
-   elif grafico_seleccionado == 'maypastel.png':
+    elif grafico_seleccionado == 'maypastel.png':
         st.subheader("📊 Histograma Mayte: Goles Girona")
         texto_8 = """
        Este gráfico muestra que el Girona, jugando como local, suele anotar entre 1 y 2 goles por partido, siendo esta la frecuencia más habitual.
