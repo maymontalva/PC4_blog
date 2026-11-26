@@ -266,9 +266,11 @@ else:
             st.image("nube_de_gabi.png", width=800)
            
     elif grafico_seleccionado == 'histograma_1.png':
-        st.subheader("📊 Histograma Matias: Goles Celta")
+        st.subheader("📊 Histograma Matias: Goles recibidos Celta")
         texto_8 = """
-      Interpretacion
+      En cuanto a los goles recibidos como local, la distribución muestra que la mayor 
+      frecuencia se concentra en 1 gol recibido, seguido por los encuentros en los que el equipo logró mantener
+      su portería en cero y aquellos donde recibió 2 goles.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
@@ -297,6 +299,18 @@ else:
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("wordcloud.png", width=800) 
+           
+    elif grafico_seleccionado == 'mapa_pucp.html':
+        st.subheader(" 🗺️ Mapa Gabi: Pilotos F1")
+        texto_8 = """
+      Esta nube de palabras resalta las palabras mas frecuentes del libro "El pincipito", escrito por Antoine de Saint-Exuperi
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
+    
+        with open("mapa_pucp.html", "r", encoding="utf-8") as mapa:
+                html_content = mapa.read()
+    
+        components.html(html_content,height=600)
     else:
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
         texto_9 = """
