@@ -146,7 +146,7 @@ else:
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
-    graficos = [ "barras.png", "histograma_1.png", 'mapa_pucp.html', "mapa_vettel_raikkonen.html, "pastel.png", "wordcloud.png", 
+    graficos = [ "barras.png", "histograma_1.png", 'mapa_pucp.html', "mapa_vettel_raikkonen.html", "pastel.png", "wordcloud.png", 
     "maywordcloud.png", "maybarras.png", "maymapa.html", "mayhistograma.png", "maypastel.png", "grafico_de_barras_gabi.png",
     "histograma_abi.png", "nube_de_gabi.png", "grafico_pastel_gabi.png" ] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
