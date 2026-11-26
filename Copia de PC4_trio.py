@@ -118,11 +118,10 @@ elif  opciones_2 == 'Experiencia':
 
     # Alumno c
     texto_6 = """
-    Es mi primera vez programando. 
-    Al principio pensé que era muy difcil aprenderse todos los códigos, librerías, etc. pero en el transcurso del curso me di cuenta que si tiene su grado de dificultad, pero es posible aprender.
-    La programación me ha enseñado a ver el transfondo y funcionamiento de muchos programas.
-    La verdad no me gusta mucho la programación, pero considero que cuando programas con temas que te gustan se hace más divertida la experiencia.
-    En el futuro quisiera que la programación me ayude a completar investigaciones. ya que creo que hace más practico el manejo de datos.
+    Cuando empecé a programar me sentí un poco intimidado, porque la verdad creí que iba a ser algo complicado y bastante laborioso (lo cual sí es),
+    pero he aprendido a manejar (hasta cierto punto) un nuevo programa como Colab y las funciones que existen, es muy interesante como con ciertos códigos podemos
+    simplificar tareas como depurar un texto, o jugar con las condicionales. Lo que me gusta de programar es que hay un código para todo y que, sí es cierto, que al final
+    puede
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
         
