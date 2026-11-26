@@ -70,7 +70,7 @@ if opciones_2 == 'Presentaciones':
     
 elif  opciones_2 == 'Experiencia':
 
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: blue'>Experiencia 💻</h1>", unsafe_allow_html=True)
 
     # Alumno a
     texto_4 = """
