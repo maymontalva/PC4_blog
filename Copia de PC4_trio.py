@@ -85,7 +85,7 @@ elif  opciones_2 == 'Experiencia':
     
     # Formato YouTube
     st.subheader("🎥 Mayte video 1")
-    st.video("https://youtu.be/TC1kO4Qa8T4")
+    st.video("https://youtu.be/59fZFBdOI_8")
     
     
     col1, col2, col3 = st.columns([1, 2, 1])
