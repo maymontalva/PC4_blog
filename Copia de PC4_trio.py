@@ -297,25 +297,6 @@ else:
         with col2:
             st.image("wordcloud.png", width=800) 
            
-    elif grafico_seleccionado == 'mapita.html':
-        st.subheader(" 🗺️ Mapa Gabi: Nacionalidad de pilotos F1")
-        texto_8 = """
-        Para la elaboración del mapa interactivo se utilizó la biblioteca Folium, debido a que permite representar información geográfica mediante marcadores y
-        ventanas emergentes. Se eligió OpenStreetMap como mapa base 
-        porque facilita la ubicación de las ciudades de nacimiento de los pilotos y permite visualizar sus posiciones geográficas.
-        Respecto a los marcadores, se utilizaron colores diferentes para distinguir a Nico Rosberg y Felipe Massa, lo que facilita identificar a cada piloto en el mapa. Asimismo, se incorporó un ícono
-        relacionado con las carreras de automovilismo para mantener una relación visual con el tema de la Fórmula 1.
-        En las ventanas emergentes se emplearon etiquetas HTML como h2 para destacar el nombre de cada piloto, img para incorporar su fotografía y p  para organizar la información de su 
-        escudería, lugar de nacimiento y puntaje total. 
-        También se utilizó b para resaltar los datos más importantes. Finalmente, se optó por una distribución centrada y ordenada para facilitar
-        la lectura y permitir que el usuario identifique rápidamente la información de cada piloto. De esta manera, el mapa no solo presenta la ubicación geográfica, sino que también integra información 
-        deportiva y personal de los participantes de la temporada 2016.
-        """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
-    
-        with open("mapita.html", "r", encoding="utf-8") as mapa:
-                html_content = mapa.read()
-        components.html(html_content,height=600)
     elif grafico_seleccionado == 'mapa_vettel_raikkonen.html':
         st.subheader(" 🗺️ Mapa Matias: Pilotos F1")
         texto_8 = """
