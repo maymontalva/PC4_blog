@@ -217,7 +217,6 @@ else:
         texto_8 = """
       Se observa que la mayoría de los equipos mantiene un promedio entre 2 y 3 trajetas amarillas por partido fuera de casa. Celta se ubica en un rango intermedio, 
       esto muestra un nivel de faltas moderado en comparación con el resto de equipos, existe una disciplina estandar por parte del equipo Celta dentro de la liga 
-      
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
         col1, col2, col3 = st.columns([1, 7, 1])
@@ -299,7 +298,7 @@ else:
             st.image("wordcloud.png", width=800) 
            
     elif grafico_seleccionado == 'mapa_pucp.html':
-        st.subheader(" 🗺️ Mapa Gabi: Puerta Principal")
+        st.subheader(" 🗺️ Mapa Gabi: Nacionalidad de pilotos F1")
         texto_8 = """
         Para la elaboración del mapa interactivo se utilizó la biblioteca Folium, debido a que permite representar información geográfica mediante marcadores y
         ventanas emergentes. Se eligió OpenStreetMap como mapa base 
