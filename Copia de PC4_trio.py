@@ -312,7 +312,7 @@ else:
                 html_content = mapa.read()
     
         components.html(html_content,height=600)
-     elif grafico_seleccionado == 'mapita.html':
+    elif grafico_seleccionado == 'mapita.html':
         st.subheader(" 🗺️ Mapa Gabi: Nacionalidad de pilotos F1")
         texto_8 = """
         Para la elaboración del mapa interactivo se utilizó la biblioteca Folium, debido a que permite representar información geográfica mediante marcadores y
