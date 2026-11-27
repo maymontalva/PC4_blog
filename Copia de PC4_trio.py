@@ -306,9 +306,9 @@ else:
         porque facilita la ubicación de las ciudades de nacimiento de los pilotos y permite visualizar sus posiciones geográficas.
         Respecto a los marcadores, se utilizaron colores diferentes para distinguir a Nico Rosberg y Felipe Massa, lo que facilita identificar a cada piloto en el mapa. Asimismo, se incorporó un ícono
         relacionado con las carreras de automovilismo para mantener una relación visual con el tema de la Fórmula 1.
-        En las ventanas emergentes se emplearon etiquetas HTML como <h2> para destacar el nombre de cada piloto, <img> para incorporar su fotografía y <p>  para organizar la información de su 
+        En las ventanas emergentes se emplearon etiquetas HTML como h2 para destacar el nombre de cada piloto, img para incorporar su fotografía y p  para organizar la información de su 
         escudería, lugar de nacimiento y puntaje total. 
-        También se utilizó <b> para resaltar los datos más importantes. Finalmente, se optó por una distribución centrada y ordenada para facilitar
+        También se utilizó b para resaltar los datos más importantes. Finalmente, se optó por una distribución centrada y ordenada para facilitar
         la lectura y permitir que el usuario identifique rápidamente la información de cada piloto. De esta manera, el mapa no solo presenta la ubicación geográfica, sino que también integra información 
         deportiva y personal de los participantes de la temporada 2016.
         """
