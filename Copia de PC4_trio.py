@@ -317,6 +317,7 @@ else:
     
         with open("mapa_pucp.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
+            components.html(html_content,height=600)
     elif grafico_seleccionado == 'mapa_vettel_raikkonen.html':
         st.subheader(" 🗺️ Mapa Matias: Pilotos F1")
         texto_8 = """
