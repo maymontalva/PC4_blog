@@ -242,7 +242,8 @@ else:
         st.subheader("📊 Histograma Gabi: Goles Getafe")
         texto_8 = """
        En el histograma se muestra la distribución de los goles anotados por el Getafe cuando juega como local.
-       Se observa que la cantidad más frecuente es de 0 goles, con 8 partidos, lo que indica que el equipo tuvo dificultades para marcar en una parte importante de sus encuentros en casa. Asimismo, se registra una frecuencia de 5 partidos en los que anotó 1 gol y otros 5 en los que anotó 2 goles. Finalmente, solo en 1 partido logró anotar 3 goles. En general, los resultados muestran 
+       Se observa que la cantidad más frecuente es de 0 goles, con 8 partidos, lo que indica que el equipo tuvo dificultades para marcar en una parte importante de sus encuentros en casa. Asimismo,
+       se registra una frecuencia de 5 partidos en los que anotó 1 gol y otros 5 en los que anotó 2 goles. Finalmente, solo en 1 partido logró anotar 3 goles. En general, los resultados muestran 
        que el Getafe presenta una tendencia a marcar pocos goles cuando juega como local, ya que la mayor concentración de partidos se encuentra entre los 0 y 2 goles.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
@@ -301,13 +302,16 @@ else:
         st.subheader(" 🗺️ Mapa Gabi: Puerta Principal")
         texto_8 = """
       
-    Para la elaboración del mapa interactivo se utilizó la biblioteca Folium, debido a que permite representar información geográfica mediante marcadores y ventanas emergentes. Se eligió OpenStreetMap como mapa base 
+    Para la elaboración del mapa interactivo se utilizó la biblioteca Folium, debido a que permite representar información geográfica mediante marcadores y
+    ventanas emergentes. Se eligió OpenStreetMap como mapa base 
     porque facilita la ubicación de las ciudades de nacimiento de los pilotos y permite visualizar sus posiciones geográficas.
     Respecto a los marcadores, se utilizaron colores diferentes para distinguir a Nico Rosberg y Felipe Massa, lo que facilita identificar a cada piloto en el mapa. Asimismo, se incorporó un ícono
     relacionado con las carreras de automovilismo para mantener una relación visual con el tema de la Fórmula 1.
-    En las ventanas emergentes se emplearon etiquetas HTML como <h2> para destacar el nombre de cada piloto, <img> para incorporar su fotografía y <p>  para organizar la información de su escudería, lugar de nacimiento y puntaje total. 
+    En las ventanas emergentes se emplearon etiquetas HTML como <h2> para destacar el nombre de cada piloto, <img> para incorporar su fotografía y <p>  para organizar la información de su 
+    escudería, lugar de nacimiento y puntaje total. 
     También se utilizó <b> para resaltar los datos más importantes. Finalmente, se optó por una distribución centrada y ordenada para facilitar
-    la lectura y permitir que el usuario identifique rápidamente la información de cada piloto. De esta manera, el mapa no solo presenta la ubicación geográfica, sino que también integra información deportiva y personal de los participantes de la temporada 2016.
+    la lectura y permitir que el usuario identifique rápidamente la información de cada piloto. De esta manera, el mapa no solo presenta la ubicación geográfica, sino que también integra información 
+    deportiva y personal de los participantes de la temporada 2016.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
