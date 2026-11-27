@@ -297,7 +297,7 @@ else:
         with col2:
             st.image("wordcloud.png", width=800) 
            
-    elif grafico_seleccionado == 'mapa_pucp.html':
+    elif grafico_seleccionado == 'mapita.html':
         st.subheader(" 🗺️ Mapa Gabi: Nacionalidad de pilotos F1")
         texto_8 = """
         Para la elaboración del mapa interactivo se utilizó la biblioteca Folium, debido a que permite representar información geográfica mediante marcadores y
@@ -313,7 +313,7 @@ else:
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
-        with open("mapa_pucp.html", "r", encoding="utf-8") as mapa:
+        with open("mapita.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
         components.html(html_content,height=600)
     elif grafico_seleccionado == 'mapa_vettel_raikkonen.html':
